@@ -1,0 +1,22 @@
+[report]
+show_missing = True
+
+omit =
+    */python?.?/*
+    */migrations/*
+    *tests*
+    *manage*
+    *apps.py*
+    *production.py*
+    *staging.py*
+    *admin*
+    *__init__*
+    *0001_initial*
+    */env/*
+    */settings/*
+    *urls.py*
+    *app.json*
+    *Procfile*
+    *db.sqlite*
+    *live-static-files*
+

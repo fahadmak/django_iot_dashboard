@@ -1,0 +1,19 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+    "DATABASE_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "name": "django_iot_dashboard",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

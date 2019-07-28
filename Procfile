@@ -1,0 +1,1 @@
+web: python manage.py collectstatic --noinput; python manage.py makemigrations --merge; python manage.py migrate; gunicorn iot_dashboard.wsgi

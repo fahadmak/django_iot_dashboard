@@ -1,0 +1,23 @@
+language: python
+python:
+    - "3.6.0"
+addons:
+  postgresql: "9.6"
+
+env:
+    - repo_token: $REPO_TOKEN
+
+install:
+    - pip install -r requirements.txt
+    - pip install coveralls
+
+before_script:
+    - psql -c "create database iot_dashboard;" -U postgres
+
+script:
+    - python manage.py test
+    - coverage
+    - coveralls
+
+after_success:
+    - coveralls

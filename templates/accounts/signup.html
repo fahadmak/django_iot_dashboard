@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block title %}Sign Up | Iot Dashboard{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Sign Up</h5>
+                    <form method='POST'>
+                        <div class="form-group">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up </button>
+                        <div style=" padding: 10px">
+                            <span style="font-size: 12px; padding: 50px">Already have an account? <a
+                                    href="/accounts/login/" class="card-link text-primary"> Login</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

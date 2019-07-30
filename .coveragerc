@@ -4,6 +4,8 @@ omit =
     *admin*
     *__init__.py
     *apps.py
+    */cover/*
+    */dashboard/models.py
 
 
 [report]
@@ -13,3 +15,5 @@ omit =
     *admin*
     *__init__.py
     *apps.py
+    */cover/*
+    */dashboard/models.py

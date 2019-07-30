@@ -124,7 +124,7 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 NOSE_ARGS = [
     '--with-coverage',
-    '--cover-package=iot_dashboard.apps.accounts',  # Change `MY_APP` to your `app` name
+    '--cover-package=iot_dashboard.apps.accounts, iot_dashboard.apps.dashboard',  # Change `MY_APP` to your `app` name
     '--cover-html',
 ]
 

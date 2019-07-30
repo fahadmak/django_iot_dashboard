@@ -20,6 +20,13 @@ class UserModelTest(TestCase):
         self.assertEquals(user.get_short_name(), self.credentials['display_name'])
         self.assertEquals(user.get_long_name(),  f"{self.credentials['display_name']} @({self.credentials['username']})")
 
+    def test_user_object_created(self):
+        user = User(username='fahdmak', password='yuoirt', display_name='display', email='email@aol.com')
+        # self.assertEquals(str(user), '@' + self.credentials['username'])
+        self.assertEquals(user.username, self.credentials['username'])
+        self.assertEquals(user.get_short_name(), self.credentials['display_name'])
+        self.assertEquals(user.get_long_name(),  f"{self.credentials['display_name']} @({self.credentials['username']})")
+
     def test_superuser_created(self):
         user = User.objects.create_superuser(**self.credentials)
         self.assertEquals(user.email, self.credentials['email'])

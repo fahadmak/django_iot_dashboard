@@ -1,7 +1,11 @@
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.shortcuts import render
+
+from iot_dashboard.apps.dashboard.services import get_channel
 
 
 @login_required
-def home(request):
-    return HttpResponse('Hello, World!')
+def dashboard(request):
+    channel = get_channel()
+    return render(request, 'dashboard/index.html', {'feeds': channel['feeds']})
+

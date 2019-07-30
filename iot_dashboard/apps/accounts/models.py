@@ -58,4 +58,3 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def get_long_name(self):
         return f'{self.display_name} @({self.username})'
-

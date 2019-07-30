@@ -1,6 +1,7 @@
 language: python
+
 python:
-    - "3.6.0"
+    - "3.7.0"
 addons:
   postgresql: "9.6"
 

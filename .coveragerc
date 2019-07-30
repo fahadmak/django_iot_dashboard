@@ -1,22 +1,15 @@
+[run]
+omit =
+    *migrations*
+    *admin*
+    *__init__.py
+    *apps.py
+
+
 [report]
 show_missing = True
-
 omit =
-    */python?.?/*
-    */migrations/*
-    *tests*
-    *manage*
-    *apps.py*
-    *production.py*
-    *staging.py*
+    *migrations*
     *admin*
-    *__init__*
-    *0001_initial*
-    */env/*
-    */settings/*
-    *urls.py*
-    *app.json*
-    *Procfile*
-    *db.sqlite*
-    *live-static-files*
-
+    *__init__.py
+    *apps.py

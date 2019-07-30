@@ -1,0 +1,38 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$dURiFCXNLei0$zu9qDy5mOOakB8mZPU18usayqLi3zpQFhZnfoNHHXhs=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "email.red@andela.com",
+        "username": "username",
+        "display_name": "yui",
+        "bio": "",
+        "date_joined": "2019-07-29T09:17:21.044Z",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$7TXt4zUmcHLJ$Nx56GQ6ZDtcfOA8F8oZQItAAYqd4ThR+jVAoH29Ib4s=",
+        "last_login": null,
+        "is_superuser": false,
+        "email": "email.resd@andela.com",
+        "username": "Redsername",
+        "display_name": "zui",
+        "bio": "",
+        "date_joined": "2019-07-29T09:17:56.202Z",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

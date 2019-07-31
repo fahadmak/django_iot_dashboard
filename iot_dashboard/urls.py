@@ -16,8 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from iot_dashboard import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('iot_dashboard.apps.accounts.urls', namespace='accounts')),
     path('', include('iot_dashboard.apps.dashboard.urls', namespace='dashboard')),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+
+        # For django versions before 2.0:
+        # url(r'^__debug__/', include(debug_toolbar.urls)),
+
+    ] + urlpatterns

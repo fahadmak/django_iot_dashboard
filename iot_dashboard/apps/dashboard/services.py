@@ -8,5 +8,5 @@ def get_channel():
     }
     r = requests.get(url, params=params)
     data = r.json()
-    channel = {'feeds': data['feeds']}
+    channel = data['feeds']
     return channel

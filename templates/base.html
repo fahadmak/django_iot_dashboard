@@ -12,13 +12,11 @@
 </head>
 
 <body class="bg-light">
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/bootstrap-tagsinput.js' %}">
-        $("input").tagsinput('items')
-    </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
 
 </html>

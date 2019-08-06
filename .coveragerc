@@ -17,3 +17,4 @@ omit =
     *apps.py
     */cover/*
     */dashboard/models.py
+    */accounts/models.py
